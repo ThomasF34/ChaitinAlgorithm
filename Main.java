@@ -44,10 +44,14 @@ public class Main {
         Vertex s7 = new Vertex(7);
         Vertex s8 = new Vertex(8);
         Vertex s9 = new Vertex(9);
+        Vertex s14 = new Vertex(10);
 
         Edge a6 = new Edge(s6,s7);
         Edge a7 = new Edge(s6,s8);
         Edge a8 = new Edge(s8,s9);
+        Edge a14 = new Edge(s14,s7);
+        Edge a15 = new Edge(s14,s6);
+
 
         Edge a9 = new Edge(s7,s8); //Preference
 
@@ -55,6 +59,9 @@ public class Main {
         listEdgeInterf.add(a6);
         listEdgeInterf.add(a7);
         listEdgeInterf.add(a8);
+        listEdgeInterf.add(a14);
+        listEdgeInterf.add(a15);
+
 
         ArrayList<Edge> listEdgePref = new ArrayList<>();
         listEdgePref.add(a9);
@@ -64,9 +71,11 @@ public class Main {
         listVertex.add(s7);
         listVertex.add(s8);
         listVertex.add(s9);
+        listVertex.add(s14);
+
 
         g = new Graph(listVertex, listEdgeInterf, listEdgePref);
-        colorGraph(g, 2);
+        colorGraph(g, 3);
         System.out.println(g);
 
         // Third test - Graph with spill
