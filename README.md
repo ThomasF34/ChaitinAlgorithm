@@ -7,8 +7,9 @@ Three different tests
 2. Graph with preference link
 3. Graph with "spill" : First print will show the pessimistic version of the algorithm, and second one will show optimistic version.
 
-![Pessimistic version](Pessimistic.png)
-![Optimistic version](Optimistic.png)
+<img src="Pessimistic.png" width="200"> Pessimistic version
+
+<img src="Optimistic.png" width="200"> Optimistic version
 
 # Chaitin Algorithm ?!
 
